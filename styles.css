@@ -1,0 +1,26 @@
+body {
+    background-color: #292F36;
+}
+
+h1 {
+    color: #98FAEC;
+}
+
+h2 {
+    color: #98FAEC;
+}
+
+h3 {
+    color: #98FAEC;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
