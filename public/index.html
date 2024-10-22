@@ -8,173 +8,173 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-bg-1 text-white text-mediaM font-ibm">
-    <!--Side navigation widget-->
-    <div id="nav-widget" class="fixed flex flex-col border bg-bg-2 border-white rounded-40 p-3 mt-48 ml-10">
-        <a class="mb-6 rounded-40"><img src="img/home.svg"></a>
-        <a class="mb-6 rounded-40"><img src="img/about.svg"></a>
-        <a class="mb-6 rounded-40"><img src="img/code.svg"></a>
-        <a class="mb-6 rounded-40"><img src="img/nav-monitor.svg"></a>
-        <a><img src="img/contact.svg"></a>
-    </div>
+    <main>
+        <!--Side navigation widget-->
+        <nav id="nav-widget" class="fixed flex flex-col border bg-bg-2 border-white rounded-40 p-3 mt-48 ml-10">
+            <a class="mb-6 rounded-40"><img src="img/home.svg"></a>
+            <a class="mb-6 rounded-40"><img src="img/about.svg"></a>
+            <a class="mb-6 rounded-40"><img src="img/code.svg"></a>
+            <a class="mb-6 rounded-40"><img src="img/nav-monitor.svg"></a>
+            <a><img src="img/contact.svg"></a>
+        </nav>
 
-    <!--Home section-->
-    <section id="home" class="pb-40 pt-16 px-32">
-        <header class="border-b border-grey flex justify-between">
-            <div class="font-ubuntu text-h2M flex">
-                <h3 class="text-brand-1">&lt;N/&gt;</h3>
-                <h3>Nicholas Cross</h3>
-            </div>
-            
-            <div class="flex mx-10">
-                <a class="flex items-center mx-5">
-                    <img src="img/linkedin.svg">
-                    <p>Linkedin</p>
-                </a>
+        <!--Home Section-->
+        <section id="home" class="pb-40 pt-8 px-32">
+            <!--Header-->
+            <header class="pb-16 border-b border-grey flex justify-between">
+                <div class="font-ubuntu text-h2M flex text-nowrap">
+                    <h3 class="text-brand-1">&lt;N/&gt;</h3>
+                    <h3>Nicholas Cross</h3>
+                </div>
+                <div class="flex mx-10">
+                    <a href="https://www.linkedin.com/in/nicholas-cross-a6918815b/" class="flex items-center mx-5">
+                        <img src="img/linkedin.svg">
+                        <p class="ml-2">Linkedin</p>
+                    </a>
+                    <a href="https://discord.com/users/230379448296407040" class="flex items-center mx-5">
+                        <img src="img/discord.svg">
+                        <p class="ml-2">Discord</p>
+                    </a>
+                    <a href="https://github.com/NickCross-79" class="flex items-center mx-5">
+                        <img src="img/github.svg">
+                        <p class="ml-2">Github</p>
+                    </a>
+                </div>
+            </header>
 
-                <a class="flex items-center mx-5">
-                    <img src="img/discord.svg">
-                    <p>Discord</p>
-                </a>
+            <h1 class="text-brand-2 my-16 text-bgtextU font-ubuntu flex justify-center">Developer</h1>
 
-                <a class="flex items-center mx-5">
-                    <img src="img/github.svg">
-                    <p>Github</p>
-                </a>
-            </div>
-        </header>
+            <div id="home__content" class="mt-16 flex justify-evenly items-center">
+                <!--CV-->
+                <div id="home__content__cv" class="mr-32 p-6 flex flex-col items-center text-codeM border-4 border-white rounded-tl-160 rounded-br-160">
+                    <img src="img/profile-photo.png" class="mb-4">
 
-        <h1 class="text-brand-2 text-bgtextU font-ubuntu flex justify-center">Developer</h1>
+                    <h3 class="text-h2M text-nowrap">Nicholas Cross</h3>
+                    <p>Computer Science Major</p>
+                    <div class="my-8 flex flex-col text-nowrap">
+                        <a class="flex my-2"><img class="mr-4" src="img/mail-brand1.svg"><p>ncross7799@gmail.com</p></a>
+                        <a class="flex my-2"><img class="mr-4" src="img/location.svg"><p>Canada</p></a>
+                        <a class="flex my-2"><img class="mr-4" src="img/job.svg"><P>Full-Time Student</P></a>
+                        <a class="flex my-2"><img class="mr-4" src="img/link.svg"><p>www.nicholas-cross.dev</p></a>
+                    </div>
 
-        <div id="home__content" class="flex justify-evenly">
-            <!--CV-->
-            <div id="home__content__cv" class="p-6 flex flex-col items-center text-codeM border-4 border-white rounded-tl-160 rounded-br-160">
-                <img src="img/profile-photo.png" class="mb-4">
-
-                <h3 class="text-h2M">Nicholas Cross</h3>
-                <p>Computer Science Major</p>
-                <div class="my-8 flex flex-col justify-between">
-                    <p>ncross7799@gmail.com</p>
-                    <p>Canada</p>
-                    <P>Full-Time Student</P>
-                    <p>www.nicholas-cross.dev</p>
+                    <button class="self-start text-nowrap p-4 flex font-ubuntu text-buttonU text-bg-1 bg-white rounded-32">Download CV <img src="img/download.svg"></button>
                 </div>
 
-                <button class="p-4 flex font-ubuntu text-buttonU text-bg-1 bg-white rounded-32">Download CV <img src="img/download.svg"></button>
-            </div>
+                <div class="flex justify-evenly">
+                    <!--Intro-->
+                    <div id="home__content__intro" class="mr-8">
+                        <div class="font-ubuntu text-h1U">
+                            <h2>Hey</h2>
+                            <h2>I'm <span class="text-brand-1">Nick</span>,</h2>
+                            <h2 class="text-nowrap">Software Developer</h2>
+                        </div>
 
-            <div class="flex justify-evenly">
-                <div id="home__content__intro">
-                    <div class="font-ubuntu text-h1U">
-                        <h2>Hey</h2>
-                        <h2>I'm <span class="text-brand-1">Nick</span>,</h2>
-                        <h2>Software Developer</h2>
+                        <p class="text-paraM text-wrap my-16">I enjoy using technology to help those around me. If you're looking for a developer that likes to gt stuff done,</p>
+
+                        <div class="flex">
+                            <h3 class="text-brand-1 text-h2M font-ubuntu mr-4">Let's Talk</h3>
+                            <img src="img/mail.svg">  
+                        </div>
                     </div>
 
-                    <p class="text-paraM text-wrap">I enjoy using technology to help those around me. If you're looking for a developer tht lieks to gt stuff done,</p>
-
-                    <div>
-                        <h3 class="text-brand-1 text-h2M font-ubuntu">Let's Talk</h3>
-                        <img src="img/mail.svg">  
+                    <!--Highlights-->
+                    <div id="home__content__highlights" class="text-wrap max-w-96 self-start py-12 px-8 rounded-80 bg-bg-2 flex flex-col items-start">
+                        <div class="flex items-center">
+                            <p class="text-brand-1 text-numberM">5</p>
+                            <p class="ml-4">Programming Languages</p>
+                        </div>
+                        <div class="flex items-center mt-6">
+                            <p class="text-brand-1 text-numberM">6</p>
+                            <p class="ml-4">Development Tools</p>
+                        </div>
+                        <div class="flex items-center mt-6">
+                            <p class="text-brand-1 text-numberM">3</p>
+                            <p class="ml-4">Projects</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!--Highlights-->
-                <div id="home__content__highlights" class="rounded-80 bg-bg-2 flex flex-col items-center justify-center">
-                    <div class="flex items-center">
-                        <p class="text-brand-1 text-numberM">5</p>
-                        <p>Programming Languages</p>
-                    </div>
-                    <div class="flex items-center">
-                        <p class="text-brand-1 text-numberM">6</p>
-                        <p>Development Tools</p>
-                    </div>
-                    <div class="flex items-center">
-                        <p class="text-brand-1 text-numberM">3</p>
-                        <p>Projects</p>
-                    </div>
+        <!--About section-->
+        <section id="about" class="bg-bg-2 flex" style="background-image: url(img/about-bg.png);">
+            <div class="flex flex-col justify-center items-start mx-32">
+                <h2 class="bg-bg-1 border-4 border-brand-1 rounded-tl-40 rounded-br-40 font-ubuntu text-h1U">About Me</h2>
+                <!--About para-->
+                <div class="bg-bg-1 rounded-40 p-10 mt-16">
+                    <h3 class="text-brand-1 text-h2M">Hello!<br/><br/></h3>
+                    <p class="text-paraM">My name is <span class="text-brand-1">Nicholas Cross</span>. I am a passionate <span class="text-brand-1">Computer Science</span> student at the <span class="text-brand-1">University of Windsor</span>, and I enjoy creating innovative solutions and continuously learning new technologies to enhance my skills.<br/><br/>
+                        I'm a driven and optimistic coder, committed to writing clean, efficient, and reliable code, and always pushing myself to improve. I currently have a solid foundation in <span class="text-brand-1">Java</span>, <span class="text-brand-1">Python</span>, <span class="text-brand-1">JS</span>, as well as various other languages, technologies, libraries, and frameworks.<br/><br/>
+                        I enjoy having my views and beliefs challenged, as it helps me see the world from fresh and different perspectives.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!--About section-->
-    <section id="about" class="bg-bg-2" style="background-image: url(img/about-bg.png);">
-        <div>
-            <h2 class="border border-white font-ubuntu text-h1U">About Me</h2>
+            <img class="self-start" src="img/about-image.png">
+        </section>
 
-            <h3 class="text-brand-1 text-h2M">Hello!</h3>
+        <!--Skills section-->
+        <section id="skills" style="background-image: url(img/skills-bg.png);">
+            <h2 class="text-brand-1 text-h1U font-ubuntu">Skills</h2>
 
-            <p class="text-paraM">My name is <span class="text-brand-1">Nicholas Cross</span>. I am a passionate <span class="text-brand-1">Computer Science</span> student at the <span class="text-brand-1">University of Windsor</span>, and I enjoy creating innovative solutions and continuously learning new technologies to enhance my skills.
+            <img src="img/skills-underline.svg">
 
-                I'm a driven and optimistic coder, committed to writing clean, efficient, and reliable code, and always pushing myself to improve. I currently have a solid foundation in <span class="text-brand-1">Java</span>, <span class="text-brand-1">Python</span>, <span class="text-brand-1">JS</span>, as well as various other languages, technologies, libraries, and frameworks.
-                
-                I enjoy having my views and beliefs challenged, as it helps me see the world from fresh and different perspectives.</p>
-        </div>
+            <p>I am always looking to enhance my skills</p>
 
-        <img src="img/about-image.png">
-    </section>
-
-    <!--Skills section-->
-    <section id="skills">
-        <h2 class="text-brand-1 text-h1U font-ubuntu">Skills</h2>
-
-        <img src="img/skills-underline.svg">
-
-        <p>I am always looking to enhance my skills</p>
-
-        <div id="skills__skill-cards">
-            <div class="bg-brand-2 text-bg-1">
-                <img src="img/monitor.svg">
-                <h4 class="text-menuM">Full-Stack Development</h4>
-                <p class="text-grey">HTML/CSS·JS·React·Node·Express</p>
-            </div>
-        </div>
-
-        <div id="skills__skill-icons" class="text-h2M">
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-            <h3>JS</h3>
-        </div>
-    </section>
-
-    <!--Work section-->
-    <section id="work">
-        <h2 class="text-brand-1 text-h1U font-ubuntu">My Work</h2>
-        <img src="img/work-underline.svg">
-
-        <p>I had the pleasure of working on these awesome projects</p>
-    
-        <div id="work__work-cards">
-            <img src="img/view-code.png">
-            <img src="img/view-demo1.png">
-            <img src="img/dual-screen.svg">
-        </div>
-    </section>
-
-    <!--Contact section-->
-    <section id="contact">
-        <h2 class="text-brand-1 text-h1U font-ubuntu">Contact</h2>
-        <img src="img/contact-underline.svg">
-
-        <p>I'm currently available for freelance work and full-time positions</p>
-    
-        <h3 class="border border-brand-1 text-brand-1 text-h2M">Send Me A Message</h3>
-
-        <form id="contact__form" class="font-ubuntu text-paraU">
-            <div>
-                <label class="text-brand-1">Your name *</label>
-                <textarea>Enter your name</textarea>
-
-                <label class="text-brand-1">Your email *</label>
-                <textarea>Enter your email</textarea>
+            <div id="skills__skill-cards">
+                <div class="bg-brand-2 text-bg-1">
+                    <img src="img/monitor.svg">
+                    <h4 class="text-menuM">Full-Stack Development</h4>
+                    <p class="text-grey">HTML/CSS·JS·React·Node·Express</p>
+                </div>
             </div>
 
-            <label class="text-brand-1">Your message *</label>
-            <textarea>Enter your needs</textarea>
-        </form>
+            <div id="skills__skill-icons" class="text-h2M">
+                <h3>HTML</h3>
+                <h3>CSS</h3>
+                <h3>JS</h3>
+            </div>
+        </section>
 
-        <button class="bg-brand-1 text-bg-1 text-buttonU font-ubuntu">Send Message <img src="img/send.svg"></button>
-    </section>
+        <!--Work section-->
+        <section id="work">
+            <h2 class="text-brand-1 text-h1U font-ubuntu">My Work</h2>
+            <img src="img/work-underline.svg">
+
+            <p>I had the pleasure of working on these awesome projects</p>
+        
+            <div id="work__work-cards">
+                <img src="img/view-code.png">
+                <img src="img/view-demo1.png">
+                <img src="img/dual-screen.svg">
+            </div>
+        </section>
+
+        <!--Contact section-->
+        <section id="contact">
+            <h2 class="text-brand-1 text-h1U font-ubuntu">Contact</h2>
+            <img src="img/contact-underline.svg">
+
+            <p>I'm currently available for freelance work and full-time positions</p>
+        
+            <h3 class="border border-brand-1 text-brand-1 text-h2M">Send Me A Message</h3>
+
+            <form id="contact__form" class="font-ubuntu text-paraU">
+                <div>
+                    <label class="text-brand-1">Your name *</label>
+                    <textarea>Enter your name</textarea>
+
+                    <label class="text-brand-1">Your email *</label>
+                    <textarea>Enter your email</textarea>
+                </div>
+
+                <label class="text-brand-1">Your message *</label>
+                <textarea>Enter your needs</textarea>
+            </form>
+
+            <button class="bg-brand-1 text-bg-1 text-buttonU font-ubuntu">Send Message <img src="img/send.svg"></button>
+        </section>
+    </main>
 
     <footer>
         <p>2024 NicholasCross. All rights reserved</p>
