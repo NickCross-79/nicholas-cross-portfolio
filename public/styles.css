@@ -688,6 +688,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-24{
+  margin-top: 6rem;
+}
+
 .flex{
   display: flex;
 }
@@ -702,6 +706,14 @@ video {
 
 .max-w-96{
   max-width: 24rem;
+}
+
+.grid-flow-row{
+  grid-auto-flow: row;
+}
+
+.grid-flow-col{
+  grid-auto-flow: column;
 }
 
 .flex-col{
@@ -728,6 +740,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
 .justify-evenly{
   justify-content: space-evenly;
 }
@@ -738,6 +754,10 @@ video {
 
 .gap-16{
   gap: 4rem;
+}
+
+.gap-11{
+  gap: 2.75rem;
 }
 
 .self-start{
@@ -784,6 +804,22 @@ video {
   border-top-left-radius: 2.5rem;
 }
 
+.rounded-br-8{
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-tl-8{
+  border-top-left-radius: 0.5rem;
+}
+
+.rounded-br-32{
+  border-bottom-right-radius: 2rem;
+}
+
+.rounded-tl-32{
+  border-top-left-radius: 2rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -792,8 +828,16 @@ video {
   border-width: 4px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-b{
   border-bottom-width: 1px;
+}
+
+.border-t{
+  border-top-width: 1px;
 }
 
 .border-brand-1{
@@ -809,6 +853,16 @@ video {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-t-white{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-b-brand-1{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(18 247 214 / var(--tw-border-opacity));
 }
 
 .bg-bg-1{
@@ -831,6 +885,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-transparent{
+  background-color: transparent;
+}
+
 .p-10{
   padding: 2.5rem;
 }
@@ -851,6 +909,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-32{
   padding-left: 8rem;
   padding-right: 8rem;
@@ -864,6 +926,16 @@ video {
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-16{

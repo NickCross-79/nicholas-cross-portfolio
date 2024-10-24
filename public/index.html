@@ -230,32 +230,35 @@
         </section>
 
         <!--Contact section-->
-        <section id="contact">
+        <section id="contact" class="grid place-items-center p-32">
             <h2 class="text-brand-1 text-h1U font-ubuntu">Contact</h2>
             <img src="img/contact-underline.svg">
 
             <p>I'm currently available for freelance work and full-time positions</p>
         
-            <h3 class="border border-brand-1 text-brand-1 text-h2M">Send Me A Message</h3>
+            <h3 class="border-2 border-brand-1 text-brand-1 text-h2M rounded-tl-32 rounded-br-32 py-4 px-10 mt-24">Send Me A Message</h3>
 
             <form id="contact__form" class="font-ubuntu text-paraU">
-                <div>
-                    <label class="text-brand-1">Your name *</label>
-                    <textarea>Enter your name</textarea>
-
-                    <label class="text-brand-1">Your email *</label>
-                    <textarea>Enter your email</textarea>
+                <div class="my-16 grid grid-flow-col gap-16">
+                    <div class="grid">
+                        <label class="text-brand-1">Your name *</label>
+                        <textarea class="bg-transparent border-b border-brand-1">Enter your name</textarea>
+                    </div>
+                    <div class="grid">
+                        <label class="text-brand-1">Your email *</label>
+                        <textarea class="bg-transparent border-b border-brand-1">Enter your email</textarea>
+                    </div>
                 </div>
 
                 <label class="text-brand-1">Your message *</label>
-                <textarea>Enter your needs</textarea>
+                <textarea class="bg-transparent border-b border-brand-1">Enter your needs</textarea>
             </form>
 
             <button class="bg-brand-1 text-bg-1 text-buttonU font-ubuntu">Send Message <img src="img/send.svg"></button>
         </section>
     </main>
 
-    <footer>
+    <footer class="flex justify-between p-5 border-t border-white text-paraU">
         <p>2024 NicholasCross. All rights reserved</p>
         <p>Designed by JohannLeon</p>
         <p>Developed by NicholasCross</p>
