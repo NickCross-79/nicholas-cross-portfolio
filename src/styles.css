@@ -12,3 +12,11 @@
 .skill-icon {
     @apply flex flex-col items-center justify-between shrink-0;
 }
+
+.section {
+    @apply h-1080 grid place-items-center;
+}
+
+.section-content {
+    @apply w-1920 grid place-items-center;
+}

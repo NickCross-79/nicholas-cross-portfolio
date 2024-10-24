@@ -640,10 +640,6 @@ video {
   margin-right: 2rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-14{
   margin-top: 3.5rem;
 }
@@ -652,44 +648,20 @@ video {
   margin-top: 4rem;
 }
 
-.mt-48{
-  margin-top: 12rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mt-28{
-  margin-top: 7rem;
+.mt-24{
+  margin-top: 6rem;
 }
 
 .mt-32{
   margin-top: 8rem;
 }
 
-.mt-36{
-  margin-top: 9rem;
-}
-
-.ml-5{
-  margin-left: 1.25rem;
-}
-
-.ml-6{
-  margin-left: 1.5rem;
-}
-
-.ml-7{
-  margin-left: 1.75rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
 
-.mt-24{
-  margin-top: 6rem;
+.mt-48{
+  margin-top: 12rem;
 }
 
 .flex{
@@ -700,16 +672,48 @@ video {
   display: grid;
 }
 
+.h-1080{
+  height: 67.5rem;
+}
+
+.h-12{
+  height: 3rem;
+}
+
+.w-1920{
+  width: 120rem;
+}
+
+.w-745{
+  width: 46.563rem;
+}
+
 .w-full{
   width: 100%;
+}
+
+.w-496{
+  width: 31rem;
+}
+
+.w-56{
+  width: 14rem;
 }
 
 .max-w-96{
   max-width: 24rem;
 }
 
-.grid-flow-row{
-  grid-auto-flow: row;
+.max-w-52{
+  max-width: 13rem;
+}
+
+.grow-0{
+  flex-grow: 0;
+}
+
+.resize-none{
+  resize: none;
 }
 
 .grid-flow-col{
@@ -720,16 +724,16 @@ video {
   flex-direction: column;
 }
 
-.place-items-center{
-  place-items: center;
-}
-
 .items-start{
   align-items: flex-start;
 }
 
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-center{
@@ -748,20 +752,36 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-32{
-  gap: 8rem;
-}
-
 .gap-16{
   gap: 4rem;
 }
 
-.gap-11{
-  gap: 2.75rem;
+.gap-32{
+  gap: 8rem;
+}
+
+.gap-40{
+  gap: 10rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-96{
+  gap: 24rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .self-start{
   align-self: flex-start;
+}
+
+.self-center{
+  align-self: center;
 }
 
 .overflow-hidden{
@@ -788,8 +808,16 @@ video {
   border-radius: 5rem;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .rounded-br-160{
   border-bottom-right-radius: 10rem;
+}
+
+.rounded-br-32{
+  border-bottom-right-radius: 2rem;
 }
 
 .rounded-br-40{
@@ -800,36 +828,24 @@ video {
   border-top-left-radius: 10rem;
 }
 
-.rounded-tl-40{
-  border-top-left-radius: 2.5rem;
-}
-
-.rounded-br-8{
-  border-bottom-right-radius: 0.5rem;
-}
-
-.rounded-tl-8{
-  border-top-left-radius: 0.5rem;
-}
-
-.rounded-br-32{
-  border-bottom-right-radius: 2rem;
-}
-
 .rounded-tl-32{
   border-top-left-radius: 2rem;
+}
+
+.rounded-tl-40{
+  border-top-left-radius: 2.5rem;
 }
 
 .border{
   border-width: 1px;
 }
 
-.border-4{
-  border-width: 4px;
-}
-
 .border-2{
   border-width: 2px;
+}
+
+.border-4{
+  border-width: 4px;
 }
 
 .border-b{
@@ -855,16 +871,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-t-white{
-  --tw-border-opacity: 1;
-  border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-b-brand-1{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(18 247 214 / var(--tw-border-opacity));
-}
-
 .bg-bg-1{
   --tw-bg-opacity: 1;
   background-color: rgb(41 47 54 / var(--tw-bg-opacity));
@@ -880,13 +886,13 @@ video {
   background-color: rgb(18 247 214 / var(--tw-bg-opacity));
 }
 
+.bg-transparent{
+  background-color: transparent;
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-transparent{
-  background-color: transparent;
 }
 
 .p-10{
@@ -909,8 +915,13 @@ video {
   padding: 1.5rem;
 }
 
-.p-5{
-  padding: 1.25rem;
+.p-8{
+  padding: 2rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-32{
@@ -928,26 +939,31 @@ video {
   padding-bottom: 3rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.pb-16{
-  padding-bottom: 4rem;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-40{
   padding-bottom: 10rem;
 }
 
-.pt-8{
-  padding-top: 2rem;
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
 }
 
 .text-center{
@@ -960,12 +976,6 @@ video {
 
 .font-ubuntu{
   font-family: Ubuntu;
-}
-
-.text-bgtextU{
-  font-size: 7.3125rem;
-  line-height: 8.375rem;
-  font-weight: 400;
 }
 
 .text-buttonU{
@@ -1032,11 +1042,6 @@ video {
   color: rgb(18 247 214 / var(--tw-text-opacity));
 }
 
-.text-brand-2{
-  --tw-text-opacity: 1;
-  color: rgb(152 250 236 / var(--tw-text-opacity));
-}
-
 .text-grey{
   --tw-text-opacity: 1;
   color: rgb(67 69 77 / var(--tw-text-opacity));
@@ -1068,4 +1073,16 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.section{
+  display: grid;
+  height: 67.5rem;
+  place-items: center;
+}
+
+.section-content{
+  display: grid;
+  width: 120rem;
+  place-items: center;
 }
