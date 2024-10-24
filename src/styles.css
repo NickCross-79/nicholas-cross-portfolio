@@ -14,9 +14,22 @@
 }
 
 .section {
-    @apply h-1080 grid place-items-center;
+    @apply h-1080 grid place-items-center p-32;
 }
 
 .section-content {
     @apply w-1920 grid place-items-center;
+}
+
+.conveyor-belt {
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        tranfsorm: translateX(0%);
+    }
+    100% {
+        transform: translateX(-232%);
+    }
 }

@@ -8,261 +8,327 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-bg-1 text-white text-mediaM font-ibm">
-    <main>
+    <!--Side navigation widget-->
+    <nav id="nav-widget" class="fixed flex flex-col border bg-bg-2 border-white rounded-40 p-3 mt-48 ml-10">
+        <a class="mb-6 rounded-40"><img src="img/home.svg"></a>
+        <a class="mb-6 rounded-40"><img src="img/about.svg"></a>
+        <a class="mb-6 rounded-40"><img src="img/code.svg"></a>
+        <a class="mb-6 rounded-40"><img src="img/nav-monitor.svg"></a>
+        <a><img src="img/contact.svg"></a>
+    </nav>
 
-        <!--Side navigation widget-->
-        <nav id="nav-widget" class="fixed flex flex-col border bg-bg-2 border-white rounded-40 p-3 mt-48 ml-10">
-            <a class="mb-6 rounded-40"><img src="img/home.svg"></a>
-            <a class="mb-6 rounded-40"><img src="img/about.svg"></a>
-            <a class="mb-6 rounded-40"><img src="img/code.svg"></a>
-            <a class="mb-6 rounded-40"><img src="img/nav-monitor.svg"></a>
-            <a><img src="img/contact.svg"></a>
-        </nav>
+    <!--Home Section-->
+    <section id="home" class="pt-16 h-1080">
+        <div class="flex flex-col justify-start items-center gap-40">
+            <!--Header-->
+            <header class="flex justify-center">
+                <div class="flex pb-8 border-b border-grey justify-between gap-96">
+                    <div class="font-ubuntu text-h2M flex text-nowrap">
+                        <h3 class="text-brand-1">&lt;N/&gt;&nbsp;</h3>
+                        <h3>Nicholas Cross</h3>
+                    </div>
+                    <div class="flex mx-10">
+                        <a href="https://www.linkedin.com/in/nicholas-cross-a6918815b/" class="flex items-center mx-5">
+                            <img src="img/linkedin.svg">
+                            <p class="ml-2">Linkedin</p>
+                        </a>
+                        <a href="https://discord.com/users/230379448296407040" class="flex items-center mx-5">
+                            <img src="img/discord.svg">
+                            <p class="ml-2">Discord</p>
+                        </a>
+                        <a href="https://github.com/NickCross-79" class="flex items-center mx-5">
+                            <img src="img/github.svg">
+                            <p class="ml-2">Github</p>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div id="home__content" class="flex justify-evenly items-center">
+                <!--CV-->
+                <div id="home__content__cv" class="mr-32 p-6 flex flex-col items-center text-codeM border-4 border-white rounded-tl-160 rounded-br-160">
+                    <img src="img/profile-photo.png" class="mb-4">
+                    <h3 class="text-h2M text-nowrap">Nicholas Cross</h3>
+                    <p>Computer Science Major</p>
+                    <div class="my-8 flex flex-col text-nowrap">
+                        <a class="flex my-2"><img class="mr-4" src="img/mail-brand1.svg"><p>ncross7799@gmail.com</p></a>
+                        <a class="flex my-2"><img class="mr-4" src="img/location.svg"><p>Canada</p></a>
+                        <a class="flex my-2"><img class="mr-4" src="img/job.svg"><P>Full-Time Student</P></a>
+                        <a class="flex my-2"><img class="mr-4" src="img/link.svg"><p>www.nicholas-cross.dev</p></a>
+                    </div>
+                    <a class="self-start" href="resources/Nicholas_O_Reilly_Cross_Resume.pdf" download="Nicholas_Resume.pdf"><button class="self-start text-nowrap p-4 flex font-ubuntu text-buttonU text-bg-1 bg-white rounded-32">Download CV <img src="img/download.svg"></button></a>
+                </div>
+                <div class="flex justify-evenly">
 
-        <!--Home Section-->
-        <section id="home" class="pb-40 px-32 pt-16 h-1080">
-            <div class="flex flex-col justify-start items-center gap-40">
-                <!--Header-->
-                <header class="flex justify-center">
-                    <div class="flex pb-8 border-b border-grey justify-between gap-96">
-                        <div class="font-ubuntu text-h2M flex text-nowrap">
-                            <h3 class="text-brand-1">&lt;N/&gt;&nbsp;</h3>
-                            <h3>Nicholas Cross</h3>
+                    <!--Intro-->
+                    <div id="home__content__intro" class="mr-8">
+                        <div class="font-ubuntu text-h1U">
+                            <h2>Hey</h2>
+                            <h2>I'm <span class="text-brand-1">Nick</span>,</h2>
+                            <h2 class="text-nowrap">Software Developer</h2>
                         </div>
-                        <div class="flex mx-10">
-                            <a href="https://www.linkedin.com/in/nicholas-cross-a6918815b/" class="flex items-center mx-5">
-                                <img src="img/linkedin.svg">
-                                <p class="ml-2">Linkedin</p>
-                            </a>
-                            <a href="https://discord.com/users/230379448296407040" class="flex items-center mx-5">
-                                <img src="img/discord.svg">
-                                <p class="ml-2">Discord</p>
-                            </a>
-                            <a href="https://github.com/NickCross-79" class="flex items-center mx-5">
-                                <img src="img/github.svg">
-                                <p class="ml-2">Github</p>
-                            </a>
+                        <p class="text-paraM text-wrap my-16 w-745">I enjoy using technology to help those around me. If you're looking for a developer that likes to gt stuff done,</p>
+                        <div class="flex">
+                            <h3 class="text-brand-1 text-h2M font-ubuntu mr-4">Let's Talk</h3>
+                            <img src="img/mail.svg">  
                         </div>
                     </div>
-                </header>
-                <div id="home__content" class="flex justify-evenly items-center">
-                    <!--CV-->
-                    <div id="home__content__cv" class="mr-32 p-6 flex flex-col items-center text-codeM border-4 border-white rounded-tl-160 rounded-br-160">
-                        <img src="img/profile-photo.png" class="mb-4">
-                        <h3 class="text-h2M text-nowrap">Nicholas Cross</h3>
-                        <p>Computer Science Major</p>
-                        <div class="my-8 flex flex-col text-nowrap">
-                            <a class="flex my-2"><img class="mr-4" src="img/mail-brand1.svg"><p>ncross7799@gmail.com</p></a>
-                            <a class="flex my-2"><img class="mr-4" src="img/location.svg"><p>Canada</p></a>
-                            <a class="flex my-2"><img class="mr-4" src="img/job.svg"><P>Full-Time Student</P></a>
-                            <a class="flex my-2"><img class="mr-4" src="img/link.svg"><p>www.nicholas-cross.dev</p></a>
-                        </div>
-                        <a class="self-start" href="resources/Nicholas_O_Reilly_Cross_Resume.pdf" download="Nicholas_Resume.pdf"><button class="self-start text-nowrap p-4 flex font-ubuntu text-buttonU text-bg-1 bg-white rounded-32">Download CV <img src="img/download.svg"></button></a>
-                    </div>
-                    <div class="flex justify-evenly">
 
-                        <!--Intro-->
-                        <div id="home__content__intro" class="mr-8">
-                            <div class="font-ubuntu text-h1U">
-                                <h2>Hey</h2>
-                                <h2>I'm <span class="text-brand-1">Nick</span>,</h2>
-                                <h2 class="text-nowrap">Software Developer</h2>
-                            </div>
-                            <p class="text-paraM text-wrap my-16 w-745">I enjoy using technology to help those around me. If you're looking for a developer that likes to gt stuff done,</p>
-                            <div class="flex">
-                                <h3 class="text-brand-1 text-h2M font-ubuntu mr-4">Let's Talk</h3>
-                                <img src="img/mail.svg">  
-                            </div>
+                    <!--Highlights-->
+                    <div id="home__content__highlights" class="text-wrap max-w-52 self-start py-12 px-8 rounded-80 bg-bg-2 flex flex-col items-start gap-16">
+                        <div class="flex items-center">
+                            <p class="text-brand-1 text-numberM">5</p>
+                            <p class="ml-4">Programming Languages</p>
                         </div>
-
-                        <!--Highlights-->
-                        <div id="home__content__highlights" class="text-wrap max-w-52 self-start py-12 px-8 rounded-80 bg-bg-2 flex flex-col items-start gap-16">
-                            <div class="flex items-center">
-                                <p class="text-brand-1 text-numberM">5</p>
-                                <p class="ml-4">Programming Languages</p>
-                            </div>
-                            <div class="flex items-center">
-                                <p class="text-brand-1 text-numberM">6</p>
-                                <p class="ml-4">Development Tools</p>
-                            </div>
-                            <div class="flex items-center">
-                                <p class="text-brand-1 text-numberM">3</p>
-                                <p class="ml-4">Projects</p>
-                            </div>
+                        <div class="flex items-center">
+                            <p class="text-brand-1 text-numberM">6</p>
+                            <p class="ml-4">Development Tools</p>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-brand-1 text-numberM">3</p>
+                            <p class="ml-4">Projects</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--About section-->
-        <section id="about" class="bg-bg-2 section" style="background-image: url(img/about-bg.png);">
-            <div class="flex justify-center w-1920">
-                <div class="flex flex-col justify-center items-start mx-32">
-                    <h2 class="bg-bg-1 border-4 border-brand-1 rounded-tl-40 rounded-br-40 font-ubuntu text-h1U px-10 py-4">About Me</h2>
+    <!--About section-->
+    <section id="about" class="bg-bg-2 section" style="background-image: url(img/about-bg.png);">
+        <div class="flex justify-center w-1920">
+            <div class="flex flex-col justify-center items-start mx-32">
+                <h2 class="bg-bg-1 border-4 border-brand-1 rounded-tl-40 rounded-br-40 font-ubuntu text-h1U px-10 py-4">About Me</h2>
 
-                    <!--About para-->
-                    <div class="bg-bg-1 rounded-40 p-10 mt-16">
-                        <h3 class="text-brand-1 text-h2M">Hello!<br/><br/></h3>
-                        <p class="text-paraM">My name is <span class="text-brand-1">Nicholas Cross</span>. I'm a <span class="text-brand-1">Computer Science</span> student at the <span class="text-brand-1">University of Windsor</span>, and I enjoy creating innovative solutions and continuously learning new technologies to enhance my skills.<br/><br/>
-                            I'm a driven and optimistic coder, committed to writing clean, efficient, and reliable code, and always pushing myself to improve. I currently have a solid foundation in <span class="text-brand-1">Java</span>, <span class="text-brand-1">Python</span>, <span class="text-brand-1">JS</span>, as well as various other languages, technologies, libraries, and frameworks.<br/><br/>
-                            I enjoy having my views and beliefs challenged, as it helps me see the world from fresh and different perspectives.</p>
-                    </div>
-                </div>
-                <img class="self-start" src="img/about-image.png">
-            </div>
-        </section>
-
-        <!--Skills section-->
-        <section id="skills" class="flex flex-col items-center p-32" style="background-image: url(img/skills-bg.png);">
-            <div class="section-content">
-                <h2 class="text-brand-1 text-h1U font-ubuntu">Skills</h2>
-                <img src="img/skills-underline.svg">
-                <p class="mb-16">I am always looking to enhance my skills</p>
-
-                <div id="skills__skill-cards" class="flex justify-between text-center w-full mb-20">
-                    <div class="skill-card">
-                        <img src="img/monitor.svg">
-                        <h4 class="text-menuM">Front-End Development</h4>
-                        <p class="text-grey">HTML/CSS·JS·React·Tailwind</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="img/phone.svg">
-                        <h4 class="text-menuM">App Development</h4>
-                        <p class="text-grey">Android·React Native</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="img/db.svg">
-                        <h4 class="text-menuM">Database Technologies</h4>
-                        <p class="text-grey">MySQL·PostgreSQL·MongoDB</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="img/server.svg">
-                        <h4 class="text-menuM">Back-End Development</h4>
-                        <p class="text-grey">Node·Express·Java·Python</p>
-                    </div>
-                </div>
-                <div id="skills__skill-icons" class="text-h2M flex gap-32 justify-evenly overflow-hidden w-full text-wrap">
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/html.svg" alt="HTML">
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/css.svg" alt="CSS">
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/js.svg" alt="JavaScript">
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/react.svg" alt="React">
-                        <h3>React</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/node.svg" alt="Node.js">
-                        <h3>Node</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/express.svg" alt="Express.js">
-                        <h3>Express</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/mongo.svg" alt="MongoDB">
-                        <h3>MongoDB</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/git.svg" alt="Git">
-                        <h3>Git</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/docker.svg" alt="Docker">
-                        <h3>Docker</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/postgres.svg" alt="PostgreSQL">
-                        <h3>PostgreSQL</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/java.svg" alt="Java">
-                        <h3>Java</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/spring.svg" alt="Spring">
-                        <h3>Spring</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/mysql.svg" alt="MySQL">
-                        <h3>MySQL</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/python.svg" alt="Python">
-                        <h3>Python</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/aws.svg" alt="AWS">
-                        <h3>AWS</h3>
-                    </div>
-                    <div class="skill-icon">
-                        <img class="mb-6" src="img/tailwind.svg" alt="Tailwind">
-                        <h3>Tailwind</h3>
-                    </div>
+                <!--About para-->
+                <div class="bg-bg-1 rounded-40 p-10 mt-16">
+                    <h3 class="text-brand-1 text-h2M">Hello!<br/><br/></h3>
+                    <p class="text-paraM">My name is <span class="text-brand-1">Nicholas Cross</span>. I'm a <span class="text-brand-1">Computer Science</span> student at the <span class="text-brand-1">University of Windsor</span>, and I enjoy creating innovative solutions and continuously learning new technologies to enhance my skills.<br/><br/>
+                        I'm a driven and optimistic coder, committed to writing clean, efficient, and reliable code, and always pushing myself to improve. I currently have a solid foundation in <span class="text-brand-1">Java</span>, <span class="text-brand-1">Python</span>, <span class="text-brand-1">JS</span>, as well as various other languages, technologies, libraries, and frameworks.<br/><br/>
+                        I enjoy having my views and beliefs challenged, as it helps me see the world from fresh and different perspectives.</p>
                 </div>
             </div>
-        </section>
+            <img class="self-start" src="img/about-image.png">
+        </div>
+    </section>
 
-        <!--Work section-->
-        <section id="work" class="section p-32 bg-bg-2" style="background-image: url(img/work-bg.png);">
-            <div class="section-content">
-                <h2 class="text-brand-1 text-h1U font-ubuntu">My Work</h2>
-                <img src="img/work-underline.svg">
-                <p class="mb-16 mt-4">I had the pleasure of working on these awesome projects</p>
-            
-                <div id="work__work-cards" class="flex">
-                    <a>
-                        <img class="absolute mt-14 ml-3" src="img/view-code.png">
-                        <img src="img/code-monitor.svg">
-                    </a>
-                    <a>
-                        <img class="absolute mt-32 ml-4" src="img/view-demo.png">
-                        <img src="img/demo-monitor.svg">
-                    </a>
+    <!--Skills section-->
+    <section id="skills" class="section" style="background-image: url(img/skills-bg.png);">
+        <div class="section-content">
+            <h2 class="text-brand-1 text-h1U font-ubuntu">Skills</h2>
+            <img src="img/skills-underline.svg">
+            <p class="mb-16 mt-4">I am always looking to enhance my skills</p>
+
+            <div id="skills__skill-cards" class="flex justify-between text-center w-full mb-20">
+                <div class="skill-card">
+                    <img src="img/monitor.svg">
+                    <h4 class="text-menuM">Front-End Development</h4>
+                    <p class="text-grey">HTML/CSS·JS·React·Tailwind</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/phone.svg">
+                    <h4 class="text-menuM">App Development</h4>
+                    <p class="text-grey">Android·React Native</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/db.svg">
+                    <h4 class="text-menuM">Database Technologies</h4>
+                    <p class="text-grey">MySQL·PostgreSQL·MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/server.svg">
+                    <h4 class="text-menuM">Back-End Development</h4>
+                    <p class="text-grey">Node·Express·Java·Python</p>
                 </div>
             </div>
-        </section>
-
-        <!--Contact section-->
-        <section id="contact" class="section p-32">
-            <div class="section-content">
-                <div class="flex flex-col justify-center items-center gap-5">
-                    <h2 class="text-brand-1 text-h1U font-ubuntu">Contact</h2>
-                    <img src="img/contact-underline.svg">
-                    <p>I'm currently available for full-time, contract, and freelance positions</p>
-                    <h3 class="border-2 border-brand-1 text-brand-1 text-h2M rounded-tl-32 rounded-br-32 py-4 px-10 mt-24">Send Me A Message</h3>
+            <div class="overflow-hidden w-full">
+            <div id="skills__skill-icons" class="conveyor-belt text-h2M flex gap-32 justify-evenly text-wrap">
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/html.svg" alt="HTML">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/css.svg" alt="CSS">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/js.svg" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/react.svg" alt="React">
+                    <h3>React</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/node.svg" alt="Node.js">
+                    <h3>Node</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/express.svg" alt="Express.js">
+                    <h3>Express</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/mongo.svg" alt="MongoDB">
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/git.svg" alt="Git">
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/docker.svg" alt="Docker">
+                    <h3>Docker</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/postgres.svg" alt="PostgreSQL">
+                    <h3>PostgreSQL</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/java.svg" alt="Java">
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/spring.svg" alt="Spring">
+                    <h3>Spring</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/mysql.svg" alt="MySQL">
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/python.svg" alt="Python">
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/aws.svg" alt="AWS">
+                    <h3>AWS</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/tailwind.svg" alt="Tailwind">
+                    <h3>Tailwind</h3>
                 </div>
 
-                <!--Form-->
-                <form id="contact__form" class="font-ubuntu text-paraU flex flex-col gap-16">
-                    <div class="my-16 grid grid-flow-col gap-16">
-                        <div class="grid gap-6">
-                            <label class="text-brand-1">Your name *</label>
-                            <textarea placeholder="Enter your name" class="bg-transparent border-b border-brand-1 w-496 resize-none"></textarea>
-                        </div>
-                        <div class="grid gap-6">
-                            <label class="text-brand-1">Your email *</label>
-                            <textarea placeholder="Enter your email" class="bg-transparent border-b border-brand-1 w-496 resize-none"></textarea>
-                        </div>
+                <!--Duplicate icons-->
+
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/html.svg" alt="HTML">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/css.svg" alt="CSS">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/js.svg" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/react.svg" alt="React">
+                    <h3>React</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/node.svg" alt="Node.js">
+                    <h3>Node</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/express.svg" alt="Express.js">
+                    <h3>Express</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/mongo.svg" alt="MongoDB">
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/git.svg" alt="Git">
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/docker.svg" alt="Docker">
+                    <h3>Docker</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/postgres.svg" alt="PostgreSQL">
+                    <h3>PostgreSQL</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/java.svg" alt="Java">
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/spring.svg" alt="Spring">
+                    <h3>Spring</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/mysql.svg" alt="MySQL">
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/python.svg" alt="Python">
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/aws.svg" alt="AWS">
+                    <h3>AWS</h3>
+                </div>
+                <div class="skill-icon">
+                    <img class="mb-6" src="img/tailwind.svg" alt="Tailwind">
+                    <h3>Tailwind</h3>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Work section-->
+    <section id="work" class="section bg-bg-2" style="background-image: url(img/work-bg.png);">
+        <div class="section-content">
+            <h2 class="text-brand-1 text-h1U font-ubuntu">My Work</h2>
+            <img src="img/work-underline.svg">
+            <p class="mb-16 mt-4">I had the pleasure of working on these awesome projects</p>
+        
+            <div id="work__work-cards" class="flex">
+                <a>
+                    <img class="absolute mt-14 ml-3" src="img/view-code.png">
+                    <img src="img/code-monitor.svg">
+                </a>
+                <a>
+                    <img class="absolute mt-32 ml-4" src="img/view-demo.png">
+                    <img src="img/demo-monitor.svg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact section-->
+    <section id="contact" class="section">
+        <div class="section-content">
+            <div class="flex flex-col justify-center items-center">
+                <h2 class="text-brand-1 text-h1U font-ubuntu">Contact</h2>
+                <img src="img/contact-underline.svg">
+                <p class="mt-4">I'm currently available for full-time, contract, and freelance positions</p>
+                <h3 class="border-2 border-brand-1 text-brand-1 text-h2M rounded-tl-32 rounded-br-32 py-4 px-10 mt-24">Send Me A Message</h3>
+            </div>
+
+            <!--Form-->
+            <form id="contact__form" class="font-ubuntu text-paraU flex flex-col gap-16">
+                <div class="my-16 grid grid-flow-col gap-16">
+                    <div class="grid gap-6">
+                        <label class="text-brand-1">Your name *</label>
+                        <textarea placeholder="Enter your name" class="bg-transparent border-b border-brand-1 w-496 resize-none"></textarea>
                     </div>
                     <div class="grid gap-6">
-                        <label class="text-brand-1">Your message *</label>
-                        <textarea placeholder="Enter your needs" class="bg-transparent border-b border-brand-1 resize-none"></textarea>
+                        <label class="text-brand-1">Your email *</label>
+                        <textarea placeholder="Enter your email" class="bg-transparent border-b border-brand-1 w-496 resize-none"></textarea>
                     </div>
-                    <button class="bg-brand-1 text-bg-1 text-buttonU font-ubuntu rounded-full flex justify-center gap-5 self-center px-8 py-5">Send Message <img src="img/send.svg"></button>
-                </form>
-                
-            </div>
-        </section>
-    </main>
+                </div>
+                <div class="grid gap-6">
+                    <label class="text-brand-1">Your message *</label>
+                    <textarea placeholder="Enter your needs" class="bg-transparent border-b border-brand-1 resize-none"></textarea>
+                </div>
+                <button class="bg-brand-1 text-bg-1 text-buttonU font-ubuntu rounded-full flex justify-center gap-5 self-center px-8 py-5">Send Message <img src="img/send.svg"></button>
+            </form>
+            
+        </div>
+    </section>
     <footer class="flex justify-around items-center border-t border-grey text-paraU h-12">
         <p>&copy; 2024 Nicholas Cross. All rights reserved.</p>
         <div class="flex gap-10">
