@@ -600,10 +600,6 @@ video {
   margin-bottom: 4rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
-}
-
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -628,16 +624,8 @@ video {
   margin-left: 1rem;
 }
 
-.mr-32{
-  margin-right: 8rem;
-}
-
 .mr-4{
   margin-right: 1rem;
-}
-
-.mr-8{
-  margin-right: 2rem;
 }
 
 .mt-14{
@@ -672,24 +660,20 @@ video {
   display: grid;
 }
 
-.h-1080{
-  height: 67.5rem;
+.hidden{
+  display: none;
 }
 
 .h-12{
   height: 3rem;
 }
 
-.w-1920{
-  width: 120rem;
+.h-mobile-h{
+  height: 101.5rem;
 }
 
 .w-496{
   width: 31rem;
-}
-
-.w-745{
-  width: 46.563rem;
 }
 
 .w-full{
@@ -704,6 +688,10 @@ video {
   resize: none;
 }
 
+.grid-flow-row{
+  grid-auto-flow: row;
+}
+
 .grid-flow-col{
   grid-auto-flow: column;
 }
@@ -712,16 +700,16 @@ video {
   flex-direction: column;
 }
 
+.place-items-center{
+  place-items: center;
+}
+
 .items-start{
   align-items: flex-start;
 }
 
 .items-center{
   align-items: center;
-}
-
-.justify-start{
-  justify-content: flex-start;
 }
 
 .justify-center{
@@ -752,10 +740,6 @@ video {
   gap: 8rem;
 }
 
-.gap-40{
-  gap: 10rem;
-}
-
 .gap-5{
   gap: 1.25rem;
 }
@@ -764,8 +748,8 @@ video {
   gap: 1.5rem;
 }
 
-.gap-96{
-  gap: 24rem;
+.gap-8{
+  gap: 2rem;
 }
 
 .self-start{
@@ -913,6 +897,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -933,12 +922,17 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
 }
 
-.pt-16{
-  padding-top: 4rem;
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-center{
@@ -975,6 +969,12 @@ video {
   font-size: 2rem;
   line-height: 2.625rem;
   font-weight: 500;
+}
+
+.text-h2U{
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 400;
 }
 
 .text-mediaM{
@@ -1051,16 +1051,30 @@ video {
 }
 
 .section{
-  display: grid;
-  height: 67.5rem;
-  place-items: center;
-  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1280px){
+  .section{
+    height: 67.5rem;
+    padding: 8rem;
+  }
 }
 
 .section-content{
-  display: grid;
-  width: 120rem;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1280px){
+  .section-content{
+    width: 120rem;
+  }
 }
 
 .conveyor-belt {
@@ -1074,5 +1088,87 @@ video {
 
   100% {
     transform: translateX(-232%);
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:mb-20{
+    margin-bottom: 5rem;
+  }
+
+  .xl\:mr-32{
+    margin-right: 8rem;
+  }
+
+  .xl\:mr-8{
+    margin-right: 2rem;
+  }
+
+  .xl\:flex{
+    display: flex;
+  }
+
+  .xl\:grid{
+    display: grid;
+  }
+
+  .xl\:h-882{
+    height: 55.125rem;
+  }
+
+  .xl\:w-1920{
+    width: 120rem;
+  }
+
+  .xl\:w-745{
+    width: 46.563rem;
+  }
+
+  .xl\:w-full{
+    width: 100%;
+  }
+
+  .xl\:grid-flow-col{
+    grid-auto-flow: column;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:justify-center{
+    justify-content: center;
+  }
+
+  .xl\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .xl\:gap-96{
+    gap: 24rem;
+  }
+
+  .xl\:gap-16{
+    gap: 4rem;
+  }
+
+  .xl\:self-start{
+    align-self: flex-start;
+  }
+
+  .xl\:pt-16{
+    padding-top: 4rem;
+  }
+
+  .xl\:text-h1U{
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-weight: 400;
+  }
+
+  .xl\:text-h2M{
+    font-size: 2rem;
+    line-height: 2.625rem;
+    font-weight: 500;
   }
 }

@@ -14,11 +14,11 @@
 }
 
 .section {
-    @apply h-1080 grid place-items-center p-32;
+    @apply xl:h-1080 flex flex-col justify-center items-center /*grid place-items-center*/ xl:p-32;
 }
 
 .section-content {
-    @apply w-1920 grid place-items-center;
+    @apply xl:w-1920 flex flex-col justify-center items-center /*grid place-items-center*/;
 }
 
 .conveyor-belt {
