@@ -1104,6 +1104,10 @@ video {
     margin-right: 2rem;
   }
 
+  .xl\:block{
+    display: block;
+  }
+
   .xl\:flex{
     display: flex;
   }
