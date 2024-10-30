@@ -819,6 +819,10 @@ video {
   gap: 2rem;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
 .self-start{
   align-self: flex-start;
 }
@@ -996,6 +1000,11 @@ video {
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-8{
