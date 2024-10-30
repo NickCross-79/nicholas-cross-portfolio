@@ -14,7 +14,7 @@
 }
 
 .section {
-    @apply xl:h-1080 flex flex-col justify-center items-center /*grid place-items-center*/ xl:p-32;
+    @apply xl:h-1080 flex flex-col justify-center items-center w-full /*grid place-items-center*/ xl:p-32;
 }
 
 .section-content {

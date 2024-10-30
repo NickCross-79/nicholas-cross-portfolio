@@ -18,7 +18,7 @@
     </nav>
 
     <!--Home Section-->
-    <section id="home" class="xl:pt-16 xl:h-882 flex flew-col xl:justify-center px-7">
+    <section id="home" class="xl:pt-16 xl:h-882 flex flew-col xl:justify-center xl:px-7 w-full px-6">
         <div class="flex flex-col items-center gap-16">
             <!--Header-->
             <header class="flex justify-center">
@@ -60,8 +60,8 @@
                 </div>
 
                 <!--Intro-->
-                <div class="flex xl:flex-row flex-col xl:justify-evenly justify-center items-center">
-                    <div id="home__content__intro" class="xl:mr-8">
+                <div class="flex xl:flex-row flex-col xl:justify-evenly justify-center items-center xl:w-full w-328">
+                    <div id="home__content__intro" class="xl:mr-8 xl:block flex flex-col justify-center items-center">
                         <div class="font-ubuntu xl:text-h1U text-h2U">
                             <h2>Hey</h2>
                             <h2>I'm <span class="text-brand-1">Nick</span>,</h2>
@@ -97,14 +97,14 @@
     <!--About section-->
     <section id="about" class="bg-bg-2 section" style="background-image: url(img/about-bg.png);">
         <div class="flex xl:flex-row flex-col justify-center xl:w-1920">
-            <div class="flex flex-col justify-center items-start mx-32">
+            <div class="flex flex-col justify-center xl:items-start items-center xl:mx-32 mx-6">
                 <h2 class="text-nowrap bg-bg-1 border-4 border-brand-1 rounded-tl-40 rounded-br-40 font-ubuntu xl:text-h1U text-h2U px-10 py-4">About Me</h2>
 
                 <!--About para-->
-                <div class="bg-bg-1 rounded-40 p-10 mt-16">
+                <div class="bg-bg-1 rounded-40 xl:p-10 p-6 mt-16 xl:w-full w-328">
                     <h3 class="text-brand-1 text-h2M">Hello!<br/><br/></h3>
-                    <p class="text-paraM">My name is <span class="text-brand-1">Nicholas Cross</span>. I'm a <span class="text-brand-1">Computer Science</span> student at the <span class="text-brand-1">University of Windsor</span>, and I enjoy creating innovative solutions and continuously learning new technologies to enhance my skills.<br/><br/>
-                        I'm a driven and optimistic coder, committed to writing clean, efficient, and reliable code, and always pushing myself to improve. I currently have a solid foundation in <span class="text-brand-1">Java</span>, <span class="text-brand-1">Python</span>, <span class="text-brand-1">JS</span>, as well as various other languages, technologies, libraries, and frameworks.<br/><br/>
+                    <p class="text-paraM">My name is <span class="text-brand-1">Nicholas Cross</span>. I'm a <span class="text-brand-1">Computer Science</span> student at the <span class="text-brand-1">University of Windsor</span>, and I enjoy creating innovative solutions and continuously learning new technologies to enhance my skills.<br class="xl:block hidden"/><br class="xl:block hidden"/>
+                        I'm a driven and optimistic coder, committed to writing clean, efficient, and reliable code, and always pushing myself to improve. I currently have a solid foundation in <span class="text-brand-1">Java</span>, <span class="text-brand-1">Python</span>, <span class="text-brand-1">JS</span>, as well as various other languages, technologies, libraries, and frameworks.<br class="xl:block hidden"/><br class="xl:block hidden"/>
                         I enjoy having my views and beliefs challenged, as it helps me see the world from fresh and different perspectives.</p>
                 </div>
             </div>
@@ -280,33 +280,35 @@
     </section>
 
     <!--Work section-->
-    <section id="work" class="section bg-bg-2 w-full" style="background-image: url(img/work-bg.png);">
-        <div class="section-content">
+    <section id="work" class="section bg-bg-2" style="background-image: url(img/work-bg.png);">
+        <div class="section-content px-3">
             <h2 class="text-brand-1 text-h1U font-ubuntu">My Work</h2>
             <img src="img/work-underline.svg">
-            <p class="mb-16 mt-4">I had the pleasure of working on these awesome projects</p>
+            <p class="mb-16 mt-4 text-center">I had the pleasure of working on these awesome projects</p>
         
             <div id="work__work-cards" class="flex">
+                <button class="bg-bg-1 w-auto h-auto p-2 rounded-full my-auto mr-9"><img class="mx-auto" src="img/chev-left.svg"></button>
                 <a>
-                    <img class="absolute mt-14 ml-3" src="img/view-code.png">
-                    <img src="img/code-monitor.svg">
+                    <!--<img class="absolute mt-14 ml-3" src="img/view-code.png">-->
+                    <img src="img/view-code.png">
                 </a>
                 <a>
-                    <img class="absolute mt-32 ml-4" src="img/view-demo.png">
-                    <img src="img/demo-monitor.svg">
+                    <!--<img class="absolute mt-32 ml-4" src="img/view-demo.png">-->
+                    <img src="img/view-demo.png">
                 </a>
+                <button class="bg-bg-1 w-auto h-auto p-2 rounded-full my-auto ml-9"><img class="mx-auto" src="img/chev-right.svg"></button>
             </div>
         </div>
     </section>
 
     <!--Contact section-->
-    <section id="contact" class="section px-6 w-full">
+    <section id="contact" class="section px-6 pb-16">
         <div class="section-content">
             <div class="flex flex-col justify-center items-center">
                 <h2 class="text-brand-1 text-h1U font-ubuntu">Contact</h2>
                 <img src="img/contact-underline.svg">
-                <p class="mt-4 text-wrap">I'm currently available for full-time, contract, and freelance positions</p>
-                <h3 class="border-2 border-brand-1 text-brand-1 text-h2M rounded-tl-32 rounded-br-32 py-4 px-10 mt-24">Send Me A Message</h3>
+                <p class="mt-4 text-wrap text-center">I'm currently available for full-time, contract, and freelance positions</p>
+                <h3 class="border-2 border-brand-1 text-brand-1 xl:text-h2M text-menuM rounded-tl-32 rounded-br-32 py-4 px-10 mt-24 text-nowrap">Send Me A Message</h3>
             </div>
 
             <!--Form-->
@@ -314,23 +316,23 @@
                 <div class="my-16 grid xl:grid-flow-col grid-flow-row gap-16">
                     <div class="grid gap-6">
                         <label class="text-brand-1">Your name *</label>
-                        <textarea placeholder="Enter your name" class="bg-transparent border-b border-brand-1 w-496 resize-none"></textarea>
+                        <textarea placeholder="Enter your name" class="bg-transparent border-b border-brand-1 xl:w-496 resize-none"></textarea>
                     </div>
                     <div class="grid gap-6">
                         <label class="text-brand-1">Your email *</label>
-                        <textarea placeholder="Enter your email" class="bg-transparent border-b border-brand-1 w-496 resize-none"></textarea>
+                        <textarea placeholder="Enter your email" class="bg-transparent border-b border-brand-1 xl:w-496 resize-none"></textarea>
                     </div>
                 </div>
                 <div class="grid gap-6">
                     <label class="text-brand-1">Your message *</label>
-                    <textarea placeholder="Enter your needs" class="bg-transparent border-b border-brand-1 resize-none"></textarea>
+                    <textarea placeholder="Enter your needs" class="bg-transparent border-b border-brand-1 resize-none h-36"></textarea>
                 </div>
-                <button class="bg-brand-1 text-bg-1 text-buttonU font-ubuntu rounded-full flex justify-center gap-5 self-center px-8 py-5">Send Message <img src="img/send.svg"></button>
+                <button class="bg-brand-1 text-bg-1 text-buttonU font-ubuntu rounded-full flex justify-center gap-5 self-center px-8 py-5 mt-16 xl:mt-0">Send Message <img src="img/send.svg"></button>
             </form>
             
         </div>
     </section>
-    <footer class="flex justify-around items-center border-t border-grey text-paraU h-12">
+    <footer class="flex justify-around items-center border-t border-grey text-paraU xl:h-12 p-4">
         <p>&copy; 2024 Nicholas Cross. All rights reserved.</p>
         <div class="flex gap-10">
             <p>Designed by Johann Leon</p>
