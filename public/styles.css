@@ -566,12 +566,12 @@ video {
   position: absolute;
 }
 
-.top-1{
-  top: 0.25rem;
-}
-
 .left-1{
   left: 0.25rem;
+}
+
+.top-1{
+  top: 0.25rem;
 }
 
 .mx-10{
@@ -1107,6 +1107,12 @@ video {
   justify-content: center;
 }
 
+@media (min-width: 768px){
+  .section-content{
+    width: 48rem;
+  }
+}
+
 @media (min-width: 1280px){
   .section-content{
     width: 120rem;
@@ -1117,6 +1123,12 @@ video {
   animation: scroll 40s linear infinite;
 }
 
+@media (min-width: 768px) {
+  .conveyor-belt {
+    animation: scroll 10s linear infinite;
+  }
+}
+
 @keyframes scroll {
   0% {
     tranfsorm: translateX(0%);
@@ -1124,6 +1136,38 @@ video {
 
   100% {
     transform: translateX(-232%);
+  }
+}
+
+@media (min-width: 768px){
+  .md\:mb-20{
+    margin-bottom: 5rem;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:w-496{
+    width: 31rem;
+  }
+
+  .md\:grid-flow-col{
+    grid-auto-flow: column;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:text-h1U{
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-weight: 400;
   }
 }
 
@@ -1183,6 +1227,10 @@ video {
 
   .xl\:grid-flow-col{
     grid-auto-flow: column;
+  }
+
+  .xl\:grid-cols-none{
+    grid-template-columns: none;
   }
 
   .xl\:flex-row{

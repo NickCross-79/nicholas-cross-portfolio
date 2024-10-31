@@ -18,11 +18,17 @@
 }
 
 .section-content {
-    @apply xl:w-1920 flex flex-col justify-center items-center /*grid place-items-center*/;
+    @apply xl:w-1920 md:w-768 flex flex-col justify-center items-center /*grid place-items-center*/;
 }
 
 .conveyor-belt {
     animation: scroll 40s linear infinite;
+}
+
+@media (min-width: 768px) {
+    .conveyor-belt {
+        animation: scroll 10s linear infinite;
+    }
 }
 
 @keyframes scroll {
